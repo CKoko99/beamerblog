@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  justify-content: center;
+}
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+#title {
+  white-space: nowrap;
+  margin-right: 3%;
+  margin-top: -7%;
+  margin-bottom: -7%;
+  font-size: 18px;
+  width: 30%;
+}
+nav {
+  margin-left: 3%;
+}
+header nav ul{
+    position: fixed;
+    width: 39%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: black;
+    
+    height: 100%;
+    text-align: center;
+    padding-top: 16%;
+}
+header nav ul li{
+    display: block;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    height: 4%;
+}
+header nav ul li:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+#menu {
+  width: 11%;
+}
+.site-body {
+  text-align: center;
+  color: black;
+  background-color: rgb(216 216 216);
+  margin: 0px;
+}
+.heading {
+  padding: 3%;
+  margin: -3% auto;
+}
+.heading h2 {
+  margin: 0px;
+}
+.logo {
+  margin: -35px auto -55px;
+}
+.gray-container {
+  background-color: rgb(235, 235, 235);
+  margin: 0px auto;
+  padding-bottom: 15px;
+  color: black;
+}
+
+.slideshow {
+  margin: 0px;
+  overflow: hidden;
+  max-height: 15%;
+}
+
+.slideshow figure {
+  background-color: rgb(214, 212, 212);
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: slide 20s infinite;
+  display: flex;
+  align-items: center;
+}
+figure img {
+  width: 20%;
+  float: left;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+li img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  text-align: center;
+}
+
+.hide-mobile {
+  display: none;
+}
+.content {
+  margin: 1.5em 1em 0px;
+  text-align: left;
+}
+hr {
+  margin-top: -20px;
+}
+.card {
+  border: solid rgb(180, 180, 180) 1px;
+  padding: 0px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.card:last-child {
+  margin-bottom: 0px;
+}
+.card h3 {
+  margin: 0.2em 0.8em;
+}
+.author {
+  font-size: 0.5em;
+  margin: 2px 15px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.card-text {
+  font-size: 0.5em;
+  margin: auto 15px 5px;
+  line-height: 13px;
+  font-weight: 500;
+}
+.footer {
+  background-color: rgb(46, 0, 99);
+  color: rgb(176, 184, 71);
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#welcome {
+  margin-left: 15px;
+  font-weight: 700;
+  color: black;
+}
+h3 {
+  font-weight: 600;
+}
+.date {
+  font-size: 0.5em;
+  margin: 0px 15px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 649px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  nav {
+    margin: 0px;
+  }
+  nav ul {
+    display: flex;
+    background-color: black;
+    margin: 0px;
+  }
+  nav a {
+    margin: 0px auto;
+    color: white;
+    padding: 15px 5%;
+  }
+  nav a:hover {
+    background-color: rgb(49, 49, 49);
+  }
+  .gray-container {
+    max-width: 1100px;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100%;
+    margin: auto auto 20px 15px;
+  }
+  .card-info1 {
+    flex: 1 500px;
+  }
+  .card-text {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+  .card-info2 {
+    margin: 5% auto auto 25px;
+    display: block;
+  }
+}
